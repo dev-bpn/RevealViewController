@@ -9,18 +9,19 @@
 /* Begin PBXBuildFile section */
 		D46B6E621E5F003700BC7901 /* SlideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46B6E611E5F003700BC7901 /* SlideMenuTableViewController.swift */; };
 		D4C9FBC01E5EEA35002522FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9FBBF1E5EEA35002522FF /* AppDelegate.swift */; };
-		D4C9FBC21E5EEA35002522FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9FBC11E5EEA35002522FF /* ViewController.swift */; };
 		D4C9FBC51E5EEA35002522FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9FBC31E5EEA35002522FF /* Main.storyboard */; };
 		D4C9FBC71E5EEA35002522FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C9FBC61E5EEA35002522FF /* Assets.xcassets */; };
 		D4C9FBCA1E5EEA35002522FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9FBC81E5EEA35002522FF /* LaunchScreen.storyboard */; };
 		D4C9FBD91E5EEF68002522FF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9FBD81E5EEF68002522FF /* SWRevealViewController.m */; };
+		D4E1E84A1E60004A00F00436 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1E8491E60004A00F00436 /* FirstViewController.swift */; };
+		D4E1E84C1E60005A00F00436 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1E84B1E60005A00F00436 /* SecondViewController.swift */; };
+		D4E1E84E1E60006D00F00436 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E1E84D1E60006D00F00436 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D46B6E611E5F003700BC7901 /* SlideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuTableViewController.swift; sourceTree = "<group>"; };
 		D4C9FBBC1E5EEA35002522FF /* Side Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Side Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9FBBF1E5EEA35002522FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4C9FBC11E5EEA35002522FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4C9FBC41E5EEA35002522FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4C9FBC61E5EEA35002522FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C9FBC91E5EEA35002522FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +29,9 @@
 		D4C9FBD61E5EEF67002522FF /* Side Menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Side Menu-Bridging-Header.h"; sourceTree = "<group>"; };
 		D4C9FBD71E5EEF68002522FF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D4C9FBD81E5EEF68002522FF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D4E1E8491E60004A00F00436 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D4E1E84B1E60005A00F00436 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D4E1E84D1E60006D00F00436 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				D4C9FBD41E5EEB73002522FF /* Slide Menu */,
-				D4C9FBC11E5EEA35002522FF /* ViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -100,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				D46B6E611E5F003700BC7901 /* SlideMenuTableViewController.swift */,
+				D4E1E8491E60004A00F00436 /* FirstViewController.swift */,
+				D4E1E84B1E60005A00F00436 /* SecondViewController.swift */,
+				D4E1E84D1E60006D00F00436 /* ThirdViewController.swift */,
 			);
 			name = "Slide Menu";
 			sourceTree = "<group>";
@@ -187,7 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C9FBC21E5EEA35002522FF /* ViewController.swift in Sources */,
+				D4E1E84C1E60005A00F00436 /* SecondViewController.swift in Sources */,
+				D4E1E84A1E60004A00F00436 /* FirstViewController.swift in Sources */,
+				D4E1E84E1E60006D00F00436 /* ThirdViewController.swift in Sources */,
 				D4C9FBC01E5EEA35002522FF /* AppDelegate.swift in Sources */,
 				D46B6E621E5F003700BC7901 /* SlideMenuTableViewController.swift in Sources */,
 				D4C9FBD91E5EEF68002522FF /* SWRevealViewController.m in Sources */,

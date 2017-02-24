@@ -14,7 +14,7 @@ class SlideMenuTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menuArray = ["Option A" , "Option B" , "Option C" , "Option D"]
+        menuArray = ["first" , "second" , "third"]
     }
 
 
@@ -24,21 +24,21 @@ class SlideMenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: menuArray[indexPath.row], for: indexPath)
         cell.textLabel?.text = menuArray[indexPath.row]
         return cell
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        var destinationViewController = segue.destination as! ViewController
-        
-        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
-        
-        
-        destinationViewController.clickedAt = [String(indexPath.row)]
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        var destinationViewController = segue.destination as! ViewController
+//        
+//        let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
+//        
+//        
+//        destinationViewController.clickedAt = [String(indexPath.row)]
+//    }
     
 
 }
