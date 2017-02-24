@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D46B6E621E5F003700BC7901 /* SlideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46B6E611E5F003700BC7901 /* SlideMenuTableViewController.swift */; };
 		D4C9FBC01E5EEA35002522FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9FBBF1E5EEA35002522FF /* AppDelegate.swift */; };
 		D4C9FBC21E5EEA35002522FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9FBC11E5EEA35002522FF /* ViewController.swift */; };
 		D4C9FBC51E5EEA35002522FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9FBC31E5EEA35002522FF /* Main.storyboard */; };
 		D4C9FBC71E5EEA35002522FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C9FBC61E5EEA35002522FF /* Assets.xcassets */; };
 		D4C9FBCA1E5EEA35002522FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9FBC81E5EEA35002522FF /* LaunchScreen.storyboard */; };
+		D4C9FBD91E5EEF68002522FF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9FBD81E5EEF68002522FF /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D46B6E611E5F003700BC7901 /* SlideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuTableViewController.swift; sourceTree = "<group>"; };
 		D4C9FBBC1E5EEA35002522FF /* Side Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Side Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9FBBF1E5EEA35002522FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C9FBC11E5EEA35002522FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		D4C9FBC61E5EEA35002522FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C9FBC91E5EEA35002522FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4C9FBCB1E5EEA35002522FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C9FBD61E5EEF67002522FF /* Side Menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Side Menu-Bridging-Header.h"; sourceTree = "<group>"; };
+		D4C9FBD71E5EEF68002522FF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D4C9FBD81E5EEF68002522FF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,58 @@
 		D4C9FBBE1E5EEA35002522FF /* Side Menu */ = {
 			isa = PBXGroup;
 			children = (
-				D4C9FBBF1E5EEA35002522FF /* AppDelegate.swift */,
-				D4C9FBC11E5EEA35002522FF /* ViewController.swift */,
+				D4C9FBD11E5EEAED002522FF /* UI */,
+				D4C9FBD31E5EEB5C002522FF /* View Controllers */,
+				D4C9FBD21E5EEB33002522FF /* Supporting Files */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		D4C9FBD11E5EEAED002522FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				D4C9FBC31E5EEA35002522FF /* Main.storyboard */,
 				D4C9FBC61E5EEA35002522FF /* Assets.xcassets */,
 				D4C9FBC81E5EEA35002522FF /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D4C9FBD21E5EEB33002522FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4C9FBD51E5EEE66002522FF /* SwReveal Library */,
+				D4C9FBBF1E5EEA35002522FF /* AppDelegate.swift */,
 				D4C9FBCB1E5EEA35002522FF /* Info.plist */,
 			);
-			path = "Side Menu";
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4C9FBD31E5EEB5C002522FF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4C9FBD41E5EEB73002522FF /* Slide Menu */,
+				D4C9FBC11E5EEA35002522FF /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D4C9FBD41E5EEB73002522FF /* Slide Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D46B6E611E5F003700BC7901 /* SlideMenuTableViewController.swift */,
+			);
+			name = "Slide Menu";
+			sourceTree = "<group>";
+		};
+		D4C9FBD51E5EEE66002522FF /* SwReveal Library */ = {
+			isa = PBXGroup;
+			children = (
+				D4C9FBD71E5EEF68002522FF /* SWRevealViewController.h */,
+				D4C9FBD81E5EEF68002522FF /* SWRevealViewController.m */,
+				D4C9FBD61E5EEF67002522FF /* Side Menu-Bridging-Header.h */,
+			);
+			name = "SwReveal Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +146,7 @@
 				TargetAttributes = {
 					D4C9FBBB1E5EEA35002522FF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +189,8 @@
 			files = (
 				D4C9FBC21E5EEA35002522FF /* ViewController.swift in Sources */,
 				D4C9FBC01E5EEA35002522FF /* AppDelegate.swift in Sources */,
+				D46B6E621E5F003700BC7901 /* SlideMenuTableViewController.swift in Sources */,
+				D4C9FBD91E5EEF68002522FF /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,10 +313,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Side Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "three60.Side-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Side Menu/Side Menu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,10 +328,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Side Menu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "three60.Side-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Side Menu/Side Menu-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +357,7 @@
 				D4C9FBD01E5EEA35002522FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

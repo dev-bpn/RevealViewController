@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var open: UIBarButtonItem!
+    @IBOutlet weak var textLabel: UILabel!
+    var clickedAt = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        open.target = self.revealViewController()
+        open.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        textLabel.text = "Selected VC is: " +  String(describing: clickedAt)
     }
 
     override func didReceiveMemoryWarning() {
